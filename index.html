@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Password Strength Checker</h1>
+
+        <p>Check how strong your password is!</p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter your password">
+
+        <br><br>
+
+        <input
+            type="checkbox"
+            id="showPassword"
+            onclick="togglePassword()">
+
+        Show Password
+
+        <br><br>
+
+        <button onclick="checkStrength()">
+            Check Strength
+        </button>
+
+        <h3 id="result">Password Strength: Not Checked</h3>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
